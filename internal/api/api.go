@@ -5,8 +5,6 @@ import (
 	"net/http"
 )
 
-const api string = "https://api.gofile.io"
-
 func GetRequester(req *Request) (b []byte, err error) {
 	path := api + req.Endpoint
 	if req.Token != "" {
